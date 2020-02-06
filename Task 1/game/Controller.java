@@ -1,9 +1,6 @@
 package game;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
-
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -33,15 +30,13 @@ public class Controller {
         int buffer = inputCheck(sc);
         while (buffer != correctAnswer) {
             stepCounter++;
-            if ((buffer > maxValue) || (buffer < minValue))
+            if ((buffer > maxValue) || (buffer < minValue)) {
                 view.printMessage(view.NUMBER_IS_OUT_OF_RANGE + view.RANGE_INFO + minValue + "-" + maxValue);
-
-            else if (buffer < correctAnswer) {
+            } else if (buffer < correctAnswer) {
                 minValue = buffer;
                 view.printMessage(view.WRONG_ANSWER + view.ANSWER_IS_BIGGER);
                 view.printMessage(view.RANGE_INFO + minValue + "-" + maxValue);
-            }
-            else {
+            } else {
                 maxValue = buffer;
                 view.printMessage(view.WRONG_ANSWER + view.ANSWER_IS_SMALLER);
                 view.printMessage(view.RANGE_INFO + minValue + "-" +  maxValue);
@@ -51,7 +46,6 @@ public class Controller {
         }
         statistics.add(buffer);
         view.printMessage(view.WIN_GAME_INFO + view.USER_STATISTICS);
-        //view.printMessage(view.USER_STATISTICS);
         view.printMessage(view.AMOUNT_OF_STEPS_INFO + stepCounter);
         printStatistics();
     }
@@ -80,18 +74,15 @@ public class Controller {
         }
         statistics.add(buff);
         view.printMessage(view.WIN_GAME_INFO + view.USER_STATISTICS);
-        //view.printMessage(view.USER_STATISTICS);
         view.printMessage(view.AMOUNT_OF_STEPS_INFO + counterOfSteps);
         printStatistics();
     }
 
     public int inputCheckInBufferedReader(BufferedReader br) throws Exception {
-       int parsedInput = 0;
         while (true) {
             try {
                 String input = br.readLine();
-                parsedInput = Integer.parseInt(input);
-                return parsedInput;
+                return Integer.parseInt(input);
             } catch (NumberFormatException e) {
                 view.printMessage(view.WRONG_INPUT);
             }
@@ -99,17 +90,16 @@ public class Controller {
     }
 
     public int inputCheck(Scanner scanner)  {
-        int number;
         while (!scanner.hasNextInt()) {
             view.printMessage(view.WRONG_INPUT);
             scanner.next();
         }
-        number = scanner.nextInt();
-        return number;
+        return scanner.nextInt();
     }
 
     public void printStatistics() {
-        for (int i = 0; i < statistics.size(); ++i) {
+        int arraySize = statistics.size();
+        for (int i = 0; i < arraySize; ++i) {
             System.out.println("Step " + (i + 1) + ": " + statistics.get(i));
         }
     }

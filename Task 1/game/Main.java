@@ -1,12 +1,18 @@
 package game;
 
-import game.Controller;
+
+import java.io.IOException;
 
 public class Main {
     public static void main(String [] args) {
         View view = new View();
         Controller controller = new Controller(view);
         view.printMessage(view.USER_STATISTICS);
-        controller.userInteraction();
+        try {
+            controller.userInteraction();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

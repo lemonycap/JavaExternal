@@ -25,8 +25,8 @@ public class Controller {
         String locale = selectLanguage();
         Locale current = new Locale(locale);
         ResourceBundle resourceBundle = ResourceBundle.getBundle("resources",current);
-        view.printMessage(new String(resourceBundle.getString("gameInfo").getBytes("ISO-8859-1"),"windows-1251"));
-        //guessNumber(model.getConceivedNumber(),resourceBundle);
+        view.printMessage(resourceBundle.getString("gameInfo"));
+       // guessNumber(model.getConceivedNumber(),resourceBundle);
        guessNumberUsingBufferedReader(model.getConceivedNumber(),resourceBundle);
     }
 
@@ -49,30 +49,23 @@ public class Controller {
         while (buffer != correctAnswer) {
             stepCounter++;
             if ((buffer > maxValue) || (buffer < minValue)) {
-                view.printMessage(new String((rb.getString("numberIsOutOfRange")
-                        + rb.getString("rangeInfo")).getBytes("ISO-8859-1"),"windows-1251"));
+                view.printMessage(rb.getString("numberIsOutOfRange") + rb.getString("rangeInfo") + minValue + "-" + maxValue);
 
             } else if (buffer < correctAnswer) {
                 minValue = buffer;
-                view.printMessage(new String((rb.getString("wrongAnswer")
-                        + rb.getString("answerIsBigger")).getBytes("ISO-8859-1"),"windows-1251"));
-                view.printMessage(new String(rb.getString("rangeInfo").getBytes("ISO-8859-1"),"windows-1251")
-                                    + minValue + "-" + maxValue);
+                view.printMessage(rb.getString("wrongAnswer") + rb.getString("answerIsBigger"));
+                view.printMessage(rb.getString("rangeInfo") + minValue + "-" + maxValue);
             } else {
                 maxValue = buffer;
-                view.printMessage(new String((rb.getString("wrongAnswer")
-                        + rb.getString("answerIsSmaller")).getBytes("ISO-8859-1"),"windows-1251"));
-                view.printMessage(new String(rb.getString("rangeInfo").getBytes("ISO-8859-1"),"windows-1251")
-                        + minValue + "-" + maxValue);
+                view.printMessage(rb.getString("wrongAnswer") + rb.getString("answerIsSmaller"));
+                view.printMessage(rb.getString("rangeInfo") + minValue + "-" + maxValue);
             }
             statistics.add(buffer);
             buffer = inputCheck(sc);
         }
         statistics.add(buffer);
-        view.printMessage(new String((rb.getString("winGameInfo")).getBytes("ISO-8859-1"),"windows-1251")
-                + correctAnswer);
-        view.printMessage(new String( rb.getString("userStatistics").getBytes("ISO-8859-1"),"windows-1251"));
-        view.printMessage(new String(rb.getString("amountOfStepsInfo").getBytes("ISO-8859-1"),"windows-1251") + stepCounter);
+        view.printMessage(rb.getString("winGameInfo") + correctAnswer + " \n" + rb.getString("userStatistics"));
+        view.printMessage(rb.getString("amountOfStepsInfo") + stepCounter);
         printStatistics(rb);
     }
 
@@ -82,41 +75,35 @@ public class Controller {
         int buff = inputCheckInBufferedReader(br,rb);
         while (buff != correctAnswer) {
             counterOfSteps++;
-            if ((buff > maxValue) || (buff < minValue)) {
-                view.printMessage(new String((rb.getString("numberIsOutOfRange")
-                        + rb.getString("rangeInfo")).getBytes("ISO-8859-1"),"windows-1251"));
+            if ((buff > maxValue) || (buff < minValue))
+                view.printMessage(rb.getString("numberIsOutOfRange") + rb.getString("rangeInfo") + minValue + "-" + maxValue);
 
-            } else if (buff < correctAnswer) {
+            else if (buff < correctAnswer) {
                 minValue = buff;
-                view.printMessage(new String((rb.getString("wrongAnswer")
-                        + rb.getString("answerIsBigger")).getBytes("ISO-8859-1"),"windows-1251"));
-                view.printMessage(new String(rb.getString("rangeInfo").getBytes("ISO-8859-1"),"windows-1251")
-                        + minValue + "-" + maxValue);
-            } else {
+                view.printMessage(rb.getString("wrongAnswer") + rb.getString("answerIsBigger"));
+                view.printMessage(rb.getString("rangeInfo") + minValue + "-" + maxValue);
+            }
+            else {
                 maxValue = buff;
-                view.printMessage(new String((rb.getString("wrongAnswer")
-                        + rb.getString("answerIsSmaller")).getBytes("ISO-8859-1"),"windows-1251"));
-                view.printMessage(new String(rb.getString("rangeInfo").getBytes("ISO-8859-1"),"windows-1251")
-                        + minValue + "-" + maxValue);
+                view.printMessage(rb.getString("wrongAnswer") + rb.getString("answerIsSmaller"));
+                view.printMessage(rb.getString("rangeInfo") + minValue + "-" + maxValue);
             }
             statistics.add(buff);
             buff = inputCheckInBufferedReader(br,rb);
         }
         statistics.add(buff);
-        view.printMessage(new String((rb.getString("winGameInfo")).getBytes("ISO-8859-1"),"windows-1251")
-                + correctAnswer);
-        view.printMessage(new String( rb.getString("userStatistics").getBytes("ISO-8859-1"),"windows-1251"));
-        view.printMessage(new String(rb.getString("amountOfStepsInfo").getBytes("ISO-8859-1"),"windows-1251") + counterOfSteps);
+        view.printMessage(rb.getString("winGameInfo") + correctAnswer + " \n" + rb.getString("userStatistics"));
+        view.printMessage(rb.getString("amountOfStepsInfo") + counterOfSteps);
         printStatistics(rb);
     }
 
-    public int inputCheckInBufferedReader(BufferedReader br, ResourceBundle rb) throws Exception {
+    public int inputCheckInBufferedReader(BufferedReader br,ResourceBundle rb) throws Exception {
         while (true) {
             try {
                 String input = br.readLine();
                 return Integer.parseInt(input);
             } catch (NumberFormatException e) {
-                view.printMessage(new String(rb.getString("wrongInput").getBytes("ISO-8859-1"),"windows-1251"));
+                view.printMessage(rb.getString("wrongInput"));
             }
         }
     }
@@ -143,8 +130,7 @@ public class Controller {
     public void printStatistics(ResourceBundle rb) throws UnsupportedEncodingException {
         int arraySize = statistics.size();
         for (int i = 0; i < arraySize; ++i) {
-            System.out.println(new String(rb.getString("step").getBytes("ISO-8859-1"),"windows-1251")
-                    + (i + 1) + ": " + statistics.get(i));
+            System.out.println(rb.getString("step") + (i + 1) + ": " + statistics.get(i));
         }
     }
 }

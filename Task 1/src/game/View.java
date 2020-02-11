@@ -1,6 +1,7 @@
 package game;
 
 public class View {
+    public static final String LANGUAGE_CHOICE = "Press 1 for game in English, 2 - for Russian.";
     public static final String GAME_INFO = "Try to guess the number conceived by a computer. The range is from 0 to 100";
     public static final String WRONG_ANSWER = "Wrong answer. Please, try again.";
     public static final String NUMBER_IS_OUT_OF_RANGE = "Number is out of range. Please,try again.";

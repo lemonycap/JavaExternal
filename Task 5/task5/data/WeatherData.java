@@ -71,7 +71,7 @@ public class WeatherData implements Subject {
         URLConnectionReader.getUrlContents(url);
         JSONParser parser = new JSONParser();
 
-        try (Reader reader = new FileReader("file.json")) {
+        try (Reader reader = new FileReader("src/main/resources/file.json")) {
 
             JSONObject jsonObject = (JSONObject) parser.parse(reader);
 

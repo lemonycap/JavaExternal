@@ -10,3 +10,9 @@
   * English
   * Russian
   
+  
+  ## Task 5
+  Реализовать Weather Station с помощью паттерна Наблюдатель.
+  
+  
+  

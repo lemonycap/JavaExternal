@@ -6,7 +6,6 @@ import task4.utils.URLConnectionReader;
 import task4.utils.URLContainer;
 import task4.view.View;
 
-import java.io.IOException;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

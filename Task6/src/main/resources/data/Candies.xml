@@ -1,0 +1,59 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<candies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xmlns:ns="http://www.example.com/candies"
+			 xsi:schemaLocation="http://www.example.com/candies XSDSchemeForCandies.xsd">
+	<candy productName = "Caramel candy" filling = "no filling">
+		<name> Mechta </name>
+		<energy> 30 ccal </energy>
+		<type> caramel </type>
+		<ingredients>
+			<water>100 ml</water>
+			<sugar> 20 mg </sugar>
+			<fructose> 30 mg </fructose>
+			<vaniline> 3 mg </vaniline>
+			<chocolate-type> no chocolate </chocolate-type>
+		</ingredients>
+		<value>
+			<proteins> 3 g </proteins>
+			<fats> 2 g </fats>
+			<carbs> 3 g </carbs>
+		</value>
+		<product-owner> Rot Front </product-owner>
+	</candy>
+	<candy productName = "Chocolate candy" filling = "cacao">
+		<name> Romashka </name>
+		<energy> 40 ccal </energy>
+		<type> chocolate </type>
+		<ingredients>
+			<water>100 ml</water>
+			<sugar> 30 mg </sugar>
+			<fructose> 20 mg </fructose>
+			<vaniline> 5 mg </vaniline>
+			<chocolate-type> milk </chocolate-type>
+		</ingredients>
+		<value>
+			<proteins> 4 g </proteins>
+			<fats> 5 g </fats>
+			<carbs> 2 g </carbs>
+		</value>
+		<product-owner> Roshen </product-owner>
+	</candy>
+	<candy productName = "Toffee candy" filling = "hazelnut">
+	<name> Mu-mu </name>
+		<energy> 10 ccal </energy>
+		<type> toffee </type>
+		<ingredients>
+			<water>50 ml</water>
+			<sugar> 30 mg </sugar>
+			<fructose> 20 mg </fructose>
+			<vaniline> 1 mg </vaniline>
+			<chocolate-type> no chocolate </chocolate-type>
+		</ingredients>
+		<value>
+			<proteins> 2 g </proteins>
+			<fats> 1 g </fats>
+			<carbs> 1 g </carbs>
+		</value>
+		<product-owner> Krupska </product-owner>
+	</candy>
+</candies>

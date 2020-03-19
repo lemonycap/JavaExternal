@@ -1,0 +1,53 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<schema xmlns = "http://www.w3.org/2001/XMLSchema"
+			targetNamespace = "http://example.com/candies"
+			xmlns:tns = "http://example.com/candies">
+			<element name = "candies">
+				<complexType>
+					<sequence>
+						<element name = "candy"
+								 type = "tns:candy"
+								 minOccurs = "3"
+								 maxOccurs = "unbounded" />
+					</sequence>
+				</complexType>
+			</element>
+			<complexType name = "candy">
+				<sequence>
+					<element name = "name" type = "string"/>
+					<element name = "energy" type = "positiveInteger" />
+					<element name = "type" type = "string" />
+					<element name = "ingredients" type = "tns:Ingredients"/>
+					<element name = "value" type = "tns:Value"/>
+					<element name = "product-owner" type = "string"/>
+				</sequence>
+				<attribute name = "productName" type = "string" use = "required"/>
+				<attribute name = "filling" use = "optional" default = "no filling">
+					<simpleType>
+						<restriction base = "string">
+							<enumeration value = "no filling"></enumeration>
+							<enumeration value = "cacao"></enumeration>
+							<enumeration value = "hazelnut"></enumeration>
+						</restriction>
+					</simpleType>
+				</attribute>
+			</complexType>
+				<complexType name = "Ingredients">
+					<sequence>
+						<element name = "water" type = "string"/>
+						<element name = "sugar" type = "string"/>
+						<element name = "fructose" type = "string"/>
+						<element name = "vaniline" type = "string"/>
+						<element name = "chocolate-type" type = "string"/>
+					</sequence>
+				</complexType>
+				<complexType name = "Value"> 
+					<sequence>
+						<element name = "protein" type = "string"/>
+						<element name = "fat" type = "string"/>
+						<element name = "carb" type = "string"/>
+					</sequence>
+				</complexType>
+				
+	</schema>
+	

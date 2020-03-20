@@ -1,6 +1,8 @@
 package com.example.parsers;
 
+import com.example.parsers.dom.DOMBuilder;
 import com.example.parsers.sax.SAXBuilder;
+import com.example.parsers.stax.StAXBuilder;
 import com.example.parsers.utils.Helper;
 
 public class Main {
@@ -16,5 +18,11 @@ public class Main {
         domBuilder.buildSetCandies("src/main/resources/data/Candies.xml");
         System.out.println(domBuilder.getCandies());
         Helper.printCandies(domBuilder.getCandies());
+
+        System.out.println("Work with StAX parser:");
+        StAXBuilder staxBuilder = new StAXBuilder();
+        staxBuilder.buildSetStudents("src/main/resources/data/Candies.xml");
+        System.out.println(staxBuilder.getCandies());
+        Helper.printCandies(staxBuilder.getCandies());
     }
 }

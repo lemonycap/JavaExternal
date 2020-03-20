@@ -11,14 +11,14 @@
 			<sugar> 20 mg </sugar>
 			<fructose> 30 mg </fructose>
 			<vaniline> 3 mg </vaniline>
-			<chocolate-type> no chocolate </chocolate-type>
+			<chocolate_type> no chocolate </chocolate_type>
 		</ingredients>
 		<value>
 			<proteins> 3 g </proteins>
 			<fats> 2 g </fats>
 			<carbs> 3 g </carbs>
 		</value>
-		<product-owner> Rot Front </product-owner>
+		<product_owner> Rot Front </product_owner>
 	</candy>
 	<candy productName = "Chocolate candy" filling = "cacao">
 		<name> Romashka </name>
@@ -29,14 +29,14 @@
 			<sugar> 30 mg </sugar>
 			<fructose> 20 mg </fructose>
 			<vaniline> 5 mg </vaniline>
-			<chocolate-type> milk </chocolate-type>
+			<chocolate_type> milk </chocolate_type>
 		</ingredients>
 		<value>
 			<proteins> 4 g </proteins>
 			<fats> 5 g </fats>
 			<carbs> 2 g </carbs>
 		</value>
-		<product-owner> Roshen </product-owner>
+		<product_owner> Roshen </product_owner>
 	</candy>
 	<candy productName = "Toffee candy" filling = "hazelnut">
 	<name> Mu-mu </name>
@@ -47,13 +47,13 @@
 			<sugar> 30 mg </sugar>
 			<fructose> 20 mg </fructose>
 			<vaniline> 1 mg </vaniline>
-			<chocolate-type> no chocolate </chocolate-type>
+			<chocolate_type> no chocolate </chocolate_type>
 		</ingredients>
 		<value>
 			<proteins> 2 g </proteins>
 			<fats> 1 g </fats>
 			<carbs> 1 g </carbs>
 		</value>
-		<product-owner> Krupska </product-owner>
+		<product_owner> Krupska </product_owner>
 	</candy>
 </candies>

@@ -15,11 +15,11 @@
 			<complexType name = "candy">
 				<sequence>
 					<element name = "name" type = "string"/>
-					<element name = "energy" type = "positiveInteger" />
+					<element name = "energy" type = "string" />
 					<element name = "type" type = "string" />
 					<element name = "ingredients" type = "tns:Ingredients"/>
 					<element name = "value" type = "tns:Value"/>
-					<element name = "product-owner" type = "string"/>
+					<element name = "product_owner" type = "string"/>
 				</sequence>
 				<attribute name = "productName" type = "string" use = "required"/>
 				<attribute name = "filling" use = "optional" default = "no filling">
@@ -38,7 +38,7 @@
 						<element name = "sugar" type = "string"/>
 						<element name = "fructose" type = "string"/>
 						<element name = "vaniline" type = "string"/>
-						<element name = "chocolate-type" type = "string"/>
+						<element name = "chocolate_type" type = "string"/>
 					</sequence>
 				</complexType>
 				<complexType name = "Value"> 

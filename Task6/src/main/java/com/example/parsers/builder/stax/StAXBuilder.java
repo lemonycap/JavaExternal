@@ -1,9 +1,9 @@
-package com.example.parsers.stax;
+package com.example.parsers.builder.stax;
 
 import candies.Candy;
 import candies.Ingredients;
-import candies.ObjectFactory;
 import candies.Value;
+import com.example.parsers.builder.AbstractBuilder;
 import com.example.parsers.utils.CandyEnum;
 
 import java.io.File;
@@ -17,7 +17,7 @@ import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 
-public class StAXBuilder {
+public class StAXBuilder extends AbstractBuilder {
     private HashSet<Candy> candies = new HashSet<Candy>();
     private XMLInputFactory inputFactory;
 
@@ -25,11 +25,12 @@ public class StAXBuilder {
         inputFactory = XMLInputFactory.newInstance();
     }
 
+
     public Set<Candy> getCandies() {
         return candies;
     }
 
-    public void buildSetStudents(String fileName) {
+    public void buildSetCandies(String fileName) {
         FileInputStream inputStream = null;
         XMLStreamReader reader = null;
         String name;

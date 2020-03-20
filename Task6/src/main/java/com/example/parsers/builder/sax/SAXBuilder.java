@@ -1,15 +1,16 @@
-package com.example.parsers.sax;
+package com.example.parsers.builder.sax;
 
 import java.io.IOException;
 import java.util.Set;
 
 import candies.Candy;
-import com.example.parsers.handler.CandyHandler;
+import com.example.parsers.builder.AbstractBuilder;
+import com.example.parsers.builder.sax.handler.CandyHandler;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;
 
-public class SAXBuilder {
+public class SAXBuilder extends AbstractBuilder {
     private Set<Candy> candies;
     private CandyHandler ch;
     private XMLReader reader;

@@ -1,4 +1,4 @@
-package com.example.parsers.handler;
+package com.example.parsers.builder.sax.handler;
 
 import candies.Candy;
 import candies.ObjectFactory;

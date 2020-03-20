@@ -1,4 +1,4 @@
-package com.example.parsers.dom;
+package com.example.parsers.builder.dom;
 
 import java.io.IOException;
 import java.util.HashSet;
@@ -11,13 +11,14 @@ import candies.Candy;
 import candies.Ingredients;
 import candies.ObjectFactory;
 import candies.Value;
+import com.example.parsers.builder.AbstractBuilder;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-public class DOMBuilder {
+public class DOMBuilder extends AbstractBuilder {
     private Set<Candy> candies;
     private DocumentBuilder docBuilder;
     public DOMBuilder() {

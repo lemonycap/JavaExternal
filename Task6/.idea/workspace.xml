@@ -67,7 +67,7 @@
       </method>
     </configuration>
     <configuration name="SAXBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.parsers.sax.SAXBuilder" />
+      <option name="MAIN_CLASS_NAME" value="com.example.parsers.builder.sax.SAXBuilder" />
       <module name="Task6" />
       <extension name="coverage">
         <pattern>
@@ -124,7 +124,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584621257851</updated>
-      <workItem from="1584621262477" duration="19817000" />
+      <workItem from="1584621262477" duration="20647000" />
     </task>
     <servers />
   </component>
@@ -132,34 +132,34 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1584694145509">
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1584705918093">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1584694145509" />
-    <state x="348" y="289" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1584627007613">
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1584705918093" />
+    <state x="348" y="289" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1584706423872">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="348" y="289" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1584627007613" />
+    <state x="348" y="289" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1584706423872" />
     <state x="389" y="105" key="FileChooserDialogImpl" timestamp="1584623886439">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="389" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584623886439" />
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1584705131551">
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1584706327275">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584705131551" />
-    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1584705131551">
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584706327275" />
+    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1584706327275">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584705131551" />
-    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1584705131551">
+    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584706327275" />
+    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1584706327275">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584705131551" />
-    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1584705131551">
+    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584706327275" />
+    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1584706327275">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584705131551" />
+    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584706327275" />
     <state width="1323" height="214" key="GridCell.Tab.1.bottom" timestamp="1584698078093">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -188,9 +188,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="387" y="257" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1584622799902" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1584699737656">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1584705955931">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1584699737656" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1584705955931" />
   </component>
 </project>

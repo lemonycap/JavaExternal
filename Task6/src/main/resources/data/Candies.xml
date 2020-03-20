@@ -1,4 +1,5 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="candiesXSL.xsl"?>
 <candies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 			 xmlns:ns="http://www.example.com/candies"
 			 xsi:schemaLocation="http://www.example.com/candies XSDSchemeForCandies.xsd">

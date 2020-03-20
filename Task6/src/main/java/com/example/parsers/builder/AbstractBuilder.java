@@ -2,8 +2,8 @@ package com.example.parsers.builder;
 
 import candies.Candy;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
+
 
 public abstract class AbstractBuilder {
     protected Set<Candy> candies;

@@ -2,10 +2,21 @@ package com.example.parsers.utils;
 
 import candies.Candy;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class Helper {
-    public static void printCandies(Set<Candy> candies) {
+
+    public static void sortCandies (Set<Candy> candies) {
+        List<Candy> listCandies = candies.stream().collect(Collectors.toList());
+        Collections.sort(listCandies, (o1, o2) -> o1.getProductOwner().compareTo(o2.getProductOwner()));
+        for (int i = 0; i < listCandies.size(); i++) {
+           printCandies(listCandies);
+        }
+    }
+    public static void printCandies(List<Candy> candies) {
         for (Candy c : candies) {
             System.out.println("Product name: " + c.getProductName());
             System.out.println("Filling: " + c.getFilling());

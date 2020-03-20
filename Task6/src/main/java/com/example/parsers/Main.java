@@ -11,6 +11,6 @@ public class Main {
         AbstractBuilder builder = sFactory.createBuilder("dom");
         builder.buildSetCandies("src/main/resources/data/Candies.xml");
         System.out.println(builder.getCandies());
-        Helper.printCandies(builder.getCandies());
+        Helper.sortCandies(builder.getCandies());
     }
 }

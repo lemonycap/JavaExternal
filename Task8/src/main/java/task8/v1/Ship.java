@@ -16,7 +16,7 @@ public  class  Ship implements Runnable {
     }
 
     public void run() {
-           berth.action();
+           berth.action(numberOfContainers);
         }
 
 

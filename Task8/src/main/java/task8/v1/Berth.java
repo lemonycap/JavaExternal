@@ -50,13 +50,13 @@ public class Berth {
         notifyAll();
     }
 
-      synchronized void get(int amountOfContainersOnShip) {
+       void get(int amountOfContainersOnShip) {
         int number = countAmountToUnload(amountOfContainersOnShip);
         numberOfBerthContainers += number;
         System.out.println(number + " NEW CONTAINERS. TOTAL: " + numberOfBerthContainers);
     }
 
-       synchronized void put(int amountOfContainersOnShip) {
+        void put(int amountOfContainersOnShip) {
             int number = containersToLoad(amountOfContainersOnShip);
             numberOfBerthContainers -= number;
             System.out.println(number + " - SENT CONTAINERS. TOTAL: " + numberOfBerthContainers);

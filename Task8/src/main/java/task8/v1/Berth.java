@@ -35,17 +35,6 @@ public class Berth {
             get(amountOfContainersOnShip);
             put(amountOfContainersOnShip);
         }
-       /* switch (action) {
-            case 1:
-                get(amountOfContainersOnShip);
-                amountOfContainersOnShip -= countAmountToUnload(amountOfContainersOnShip);
-                break;
-            case 2:
-                if (numberOfBerthContainers > 0)
-                    put(amountOfContainersOnShip);
-                    amountOfContainersOnShip += containersToLoad(amountOfContainersOnShip);
-                break;
-        }*/
         isBusy = false;
         notifyAll();
     }

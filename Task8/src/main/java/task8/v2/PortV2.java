@@ -1,41 +1,33 @@
-package task8.v1;
+package task8.v2;
 
+import task8.v1.Utils;
 
 import java.util.ArrayList;
 
-public class Port {
+public class PortV2 {
     private static final int AMOUNT_OF_BERTHS = 3;
     private static final int AMOUNT_OF_SHIPS = 15;
     private static final int CAPACITY = 50;
-    private static ArrayList<Berth> berths = new ArrayList<Berth>();
+    private static ArrayList<BerthV2> berths = new ArrayList<BerthV2>();
     private int amountOfPortContainers;
 
-
-
-    public Port() {
+    public PortV2() {
         createBerths();
         amountOfPortContainers = Utils.generateRandomNumber(CAPACITY,CAPACITY * 2);
         createShips();
     }
 
-    public static ArrayList<Berth> getBerths() {
-        return berths;
-    }
-
     public static void createBerths() {
         for (int i = 0; i < AMOUNT_OF_BERTHS; i++) {
-            berths.add(new Berth(CAPACITY/AMOUNT_OF_BERTHS,i));
+            berths.add(new BerthV2(CAPACITY/AMOUNT_OF_BERTHS,i));
         }
     }
 
     public static void createShips() {
         for (int i = 0; i < AMOUNT_OF_SHIPS; i++) {
             int berthNumber = Utils.generateRandomNumber(0,berths.size());
-            new Ship(i,berths.get(berthNumber));
+            new ShipV2(i,berths.get(berthNumber));
         }
     }
 
-    public int getAmountOfPortContainers() {
-        return amountOfPortContainers;
-    }
 }

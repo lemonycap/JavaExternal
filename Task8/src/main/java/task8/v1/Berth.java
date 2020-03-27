@@ -23,7 +23,8 @@ public class Berth {
             }
         }
         isBusy = true;
-        System.out.println(Thread.currentThread().getName() + " in the berth " + getNumberOfBerth() + " containers: " + numberOfBerthContainers);
+        System.out.println(Thread.currentThread().getName() + " in the berth "
+                + getNumberOfBerth() + " containers: " + numberOfBerthContainers);
         int action = Utils.generateRandomNumber(1,2);
         if (amountOfContainersOnShip == Ship.CARRYING_CAPACITY || numberOfBerthContainers == 0) {
             get(amountOfContainersOnShip);
@@ -36,6 +37,7 @@ public class Berth {
             put(amountOfContainersOnShip);
         }
         isBusy = false;
+        System.out.println(Thread.currentThread().getName() + " HAS LEFT THE BERTH");
         notifyAll();
     }
 

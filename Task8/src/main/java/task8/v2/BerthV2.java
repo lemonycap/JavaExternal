@@ -1,6 +1,5 @@
 package task8.v2;
 
-import task8.v1.Ship;
 import task8.v1.Utils;
 
 public class BerthV2 {
@@ -19,7 +18,7 @@ public class BerthV2 {
         System.out.println(Thread.currentThread().getName() + " in the berth " + getNumberOfBerth()
                         + " containers: " + numberOfBerthContainers);
         int action = Utils.generateRandomNumber(1,2);
-        if (amountOfContainersOnShip == Ship.CARRYING_CAPACITY || numberOfBerthContainers == 0) {
+        if (amountOfContainersOnShip == ShipV2.CARRYING_CAPACITY || numberOfBerthContainers == 0) {
             get(amountOfContainersOnShip);
         }
         else if (numberOfBerthContainers == berthCapacity) {

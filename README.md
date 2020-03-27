@@ -60,6 +60,7 @@ https://github.com/Berehulia/DroidWars
   
   ### Versions 
   * v 0.1 - реализация задания с использованием ключевого слова "synchronized"
+  * v 0.2 - Порт с помощью Synchronizers (Semaphore)
   
  
   

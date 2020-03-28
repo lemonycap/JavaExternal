@@ -61,6 +61,7 @@ https://github.com/Berehulia/DroidWars
   ### Versions 
   * v 0.1 - реализация задания с использованием ключевого слова "synchronized"
   * v 0.2 - Порт с помощью Synchronizers (Semaphore)
+  * v 0.3 - Порт с помощью Executor(ThreadPool) with stream
   
  
   

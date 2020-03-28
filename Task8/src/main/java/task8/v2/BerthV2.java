@@ -2,6 +2,8 @@ package task8.v2;
 
 import task8.v1.Utils;
 
+import static task8.v2.MainV2.SEMAPHORE;
+
 public class BerthV2 {
     private int berthCapacity;
     private  int numberOfBerthContainers;
@@ -13,8 +15,12 @@ public class BerthV2 {
         this.numberOfBerth = number;
     }
 
-    public  void action (int amountOfContainersOnShip) {
-
+    public  void action (int number,int amountOfContainersOnShip) {
+        try {
+            SEMAPHORE.acquire();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         System.out.println(Thread.currentThread().getName() + " in the berth " + getNumberOfBerth()
                         + " containers: " + numberOfBerthContainers);
         if (amountOfContainersOnShip == ShipV2.CARRYING_CAPACITY || numberOfBerthContainers == 0) {
@@ -27,7 +33,8 @@ public class BerthV2 {
             get(amountOfContainersOnShip);
             put(amountOfContainersOnShip);
         }
-
+        System.out.println("SHIP " + number + " LEFT THE BERTH");
+        SEMAPHORE.release();
     }
 
     void get(int amountOfContainersOnShip) {

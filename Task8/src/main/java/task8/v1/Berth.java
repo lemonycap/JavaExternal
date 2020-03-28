@@ -62,7 +62,7 @@ public class Berth {
 
     public int countAmountToUnload(int containersOnShip) {
         if ((numberOfBerthContainers + containersOnShip) > berthCapacity) {
-           return  containersOnShip - (containersOnShip - (berthCapacity - numberOfBerthContainers));
+            return  containersOnShip - (containersOnShip - (berthCapacity - numberOfBerthContainers));
         }
         return containersOnShip;
     }
@@ -74,9 +74,9 @@ public class Berth {
         else if (numberOfBerthContainers == 0) {
             return 0;
         }
-       else if ((numberOfBerthContainers - ((Ship.CARRYING_CAPACITY - containersOnShip) - numberOfBerthContainers)) > 0) {
-           return ((Ship.CARRYING_CAPACITY - containersOnShip) - numberOfBerthContainers);
+        else if ((numberOfBerthContainers - ((Ship.CARRYING_CAPACITY - containersOnShip) - numberOfBerthContainers)) > 0) {
+            return ((Ship.CARRYING_CAPACITY - containersOnShip) - numberOfBerthContainers);
         }
-       return 0;
+        return 0;
     }
 }

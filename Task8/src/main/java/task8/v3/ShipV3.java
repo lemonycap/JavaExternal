@@ -2,9 +2,6 @@ package task8.v3;
 
 import task8.v1.Utils;
 
-import static task8.v2.MainV2.SEMAPHORE;
-
-
 public class ShipV3 implements Runnable {
     private int shipNumber;
     private int numberOfContainers;

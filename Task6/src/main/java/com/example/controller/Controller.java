@@ -3,20 +3,26 @@ package com.example.controller;
 import com.example.parsers.builder.AbstractBuilder;
 import com.example.parsers.factory.BuilderFactory;
 import com.example.parsers.utils.Helper;
+import com.example.parsers.utils.ValidatingAnnotation;
+import com.example.parsers.utils.Validation;
 import com.example.validation.ValidatorSAX;
 import com.example.view.View;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 public class Controller {
     View view;
     Command command;
     AbstractBuilder builder;
 
+
     public Controller(View view) {
         this.view = view;
     }
 
-    public void processUser() {
-        ValidatorSAX.validateFile();
+    public void processUser() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        validationMethod();
         while (true) {
             parseXML();
         }
@@ -57,5 +63,26 @@ public class Controller {
             };
         }
         command.execute();
+    }
+
+    public  void validationMethod() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        Validation validation = new Validation();
+        validation.setValid(true);
+        validateXML(validation);
+    }
+
+    public  void validateXML(Validation validation) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        Class valid = Validation.class;
+        Method getValid = valid.getMethod( "isValid");
+        boolean iget_valid = (boolean)getValid.invoke(validation);
+        if( getValid.isAnnotationPresent(ValidatingAnnotation.class)) {
+            ValidatingAnnotation initAnnotation = getValid.getAnnotation(ValidatingAnnotation.class);
+            if (iget_valid == (initAnnotation.toValidate())) {
+                ValidatorSAX.validateFile();
+            }
+            else {
+                view.printMessage(View.NO_VALIDATION);
+            }
+        }
     }
 }

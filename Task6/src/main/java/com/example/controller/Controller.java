@@ -3,8 +3,8 @@ package com.example.controller;
 import com.example.parsers.builder.AbstractBuilder;
 import com.example.parsers.factory.BuilderFactory;
 import com.example.parsers.utils.Helper;
-import com.example.parsers.utils.ValidatingAnnotation;
-import com.example.parsers.utils.Validation;
+import com.example.validation.utils.ValidatingAnnotation;
+import com.example.validation.utils.Validation;
 import com.example.validation.ValidatorSAX;
 import com.example.view.View;
 

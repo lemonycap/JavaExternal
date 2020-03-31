@@ -59,7 +59,7 @@
       <module name="Task6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.parsers.utils.*" />
+          <option name="PATTERN" value="com.example.validation.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,7 +101,7 @@
       <workItem from="1585135145746" duration="688000" />
       <workItem from="1585301637886" duration="2694000" />
       <workItem from="1585588102255" duration="2481000" />
-      <workItem from="1585644098553" duration="7276000" />
+      <workItem from="1585644098553" duration="7622000" />
     </task>
     <servers />
   </component>

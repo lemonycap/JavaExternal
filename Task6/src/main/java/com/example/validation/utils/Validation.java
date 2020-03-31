@@ -1,4 +1,6 @@
-package com.example.parsers.utils;
+package com.example.validation.utils;
+
+import com.example.validation.utils.ValidatingAnnotation;
 
 public class Validation {
     boolean valid;

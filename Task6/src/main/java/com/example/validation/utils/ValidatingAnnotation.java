@@ -1,4 +1,4 @@
-package com.example.parsers.utils;
+package com.example.validation.utils;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

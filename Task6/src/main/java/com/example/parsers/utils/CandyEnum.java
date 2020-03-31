@@ -1,9 +1,7 @@
 package com.example.parsers.utils;
 
-import com.sun.org.apache.xalan.internal.xsltc.compiler.Constants;
-
 public enum CandyEnum {
-    CANDIES ("candies"),
+    CANDIES ("com/example/model/candies"),
     PRODUCT_NAME ("productName"),
     FILLING ("filling"),
     CANDY ("candy"),

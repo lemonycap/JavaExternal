@@ -1,6 +1,6 @@
 package com.example.parsers.utils;
 
-import candies.Candy;
+import com.example.model.candies.Candy;
 import com.example.view.View;
 
 import java.io.BufferedReader;

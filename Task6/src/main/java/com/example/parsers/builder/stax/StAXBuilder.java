@@ -1,8 +1,8 @@
 package com.example.parsers.builder.stax;
 
-import candies.Candy;
-import candies.Ingredients;
-import candies.Value;
+import com.example.model.candies.Candy;
+import com.example.model.candies.Ingredients;
+import com.example.model.candies.Value;
 import com.example.parsers.builder.AbstractBuilder;
 import com.example.parsers.utils.CandyEnum;
 

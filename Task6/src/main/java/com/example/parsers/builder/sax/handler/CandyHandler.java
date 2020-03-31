@@ -1,7 +1,7 @@
 package com.example.parsers.builder.sax.handler;
 
-import candies.Candy;
-import candies.ObjectFactory;
+import com.example.model.candies.Candy;
+import com.example.model.candies.ObjectFactory;
 import com.example.parsers.utils.CandyEnum;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;

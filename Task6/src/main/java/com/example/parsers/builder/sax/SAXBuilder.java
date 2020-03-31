@@ -3,7 +3,7 @@ package com.example.parsers.builder.sax;
 import java.io.IOException;
 import java.util.Set;
 
-import candies.Candy;
+import com.example.model.candies.Candy;
 import com.example.parsers.builder.AbstractBuilder;
 import com.example.parsers.builder.sax.handler.CandyHandler;
 import org.xml.sax.SAXException;

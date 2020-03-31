@@ -7,10 +7,10 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import candies.Candy;
-import candies.Ingredients;
-import candies.ObjectFactory;
-import candies.Value;
+import com.example.model.candies.Candy;
+import com.example.model.candies.Ingredients;
+import com.example.model.candies.ObjectFactory;
+import com.example.model.candies.Value;
 import com.example.parsers.builder.AbstractBuilder;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

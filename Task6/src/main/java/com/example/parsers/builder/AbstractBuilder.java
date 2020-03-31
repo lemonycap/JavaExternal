@@ -1,6 +1,6 @@
 package com.example.parsers.builder;
 
-import candies.Candy;
+import com.example.model.candies.Candy;
 
 import java.util.*;
 

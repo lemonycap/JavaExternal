@@ -12,6 +12,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -34,7 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../task4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MoreOrLessTask" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15279138" />
@@ -52,39 +53,13 @@
       <recent name="C:\Users\User\IdeaProjects\Task6\src\main\resources\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.parsers.Main" />
       <module name="Task6" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.parsers.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SAXBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.parsers.builder.sax.SAXBuilder" />
-      <module name="Task6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.parsers.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ValidatorSAX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="task6.ValidatorSAX" />
-      <module name="Task6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="task6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,9 +83,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.SAXBuilder" />
-        <item itemvalue="Application.ValidatorSAX (1)" />
-        <item itemvalue="Application.ValidatorSAX" />
       </list>
     </recent_temporary>
   </component>
@@ -124,7 +96,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584621257851</updated>
-      <workItem from="1584621262477" duration="27272000" />
+      <workItem from="1584621262477" duration="30646000" />
+      <workItem from="1585128938499" duration="62000" />
+      <workItem from="1585135145746" duration="688000" />
+      <workItem from="1585301637886" duration="2694000" />
+      <workItem from="1585588102255" duration="2481000" />
+      <workItem from="1585644098553" duration="4561000" />
     </task>
     <servers />
   </component>
@@ -132,65 +109,85 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1584705918093">
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585646854977">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1584705918093" />
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585646854977" />
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1584726975427">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1584726975427" />
     <state x="348" y="289" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1584706423872">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="348" y="289" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1584706423872" />
-    <state x="389" y="105" key="FileChooserDialogImpl" timestamp="1584708851038">
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584727709489">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="389" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584708851038" />
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1584710075609">
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584727709489" />
+    <state x="389" y="105" key="FileChooserDialogImpl" timestamp="1585647298926">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584710075609" />
-    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1584710075609">
+    <state x="389" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585647298926" />
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1585648692463">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584710075609" />
-    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1584710075609">
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585648692463" />
+    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1585648692462">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584710075609" />
-    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1584710075609">
+    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585648692462" />
+    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1585648692462">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584710075609" />
-    <state width="1323" height="214" key="GridCell.Tab.1.bottom" timestamp="1584698078093">
+    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585648692462" />
+    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1585648692463">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584698078093" />
-    <state width="1323" height="214" key="GridCell.Tab.1.center" timestamp="1584698078093">
+    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585648692463" />
+    <state width="1323" height="214" key="GridCell.Tab.1.bottom" timestamp="1584729364185">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1584698078093" />
-    <state width="1323" height="214" key="GridCell.Tab.1.left" timestamp="1584698078093">
+    <state width="1323" height="214" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584729364185" />
+    <state width="1323" height="214" key="GridCell.Tab.1.center" timestamp="1584729364184">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1584698078093" />
-    <state width="1323" height="214" key="GridCell.Tab.1.right" timestamp="1584698078093">
+    <state width="1323" height="214" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1584729364184" />
+    <state width="1323" height="214" key="GridCell.Tab.1.left" timestamp="1584729364184">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="214" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584698078093" />
+    <state width="1323" height="214" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1584729364184" />
+    <state width="1323" height="214" key="GridCell.Tab.1.right" timestamp="1584729364184">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="214" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584729364184" />
     <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1584622123797">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1584622123797" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1584703450103">
+    <state x="163" y="0" key="SettingsEditor" timestamp="1585302466922">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584703450103" />
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585302466922" />
+    <state x="378" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1585644179066">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="378" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585644179066" />
     <state x="387" y="257" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1584622799902">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="387" y="257" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1584622799902" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1584714059544">
+    <state x="252" y="56" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1585645815378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1584714059544" />
+    <state x="252" y="56" key="com.intellij.javaee.MapExternalResourceDialog/0.0.1366.728@0.0.1366.728" timestamp="1585645815378" />
+    <state x="65" y="66" key="new project wizard" timestamp="1585129021724">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="66" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1585129021724" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1585648711489">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1585648711489" />
   </component>
 </project>

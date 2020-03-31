@@ -1,53 +1,54 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
-<schema xmlns = "http://www.w3.org/2001/XMLSchema"
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema"
 			targetNamespace = "http://example.com/candies"
-			xmlns:tns = "http://example.com/candies">
-			<element name = "candies">
-				<complexType>
-					<sequence>
-						<element name = "candy"
-								 type = "tns:candy"
+			xmlns = "http://example.com/candies"
+		    elementFormDefault="qualified">
+			<xs:element  name = "candies">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name = "candy"
+								 type = "candy"
 								 minOccurs = "3"
 								 maxOccurs = "unbounded" />
-					</sequence>
-				</complexType>
-			</element>
-			<complexType name = "candy">
-				<sequence>
-					<element name = "name" type = "string"/>
-					<element name = "energy" type = "string" />
-					<element name = "type" type = "string" />
-					<element name = "ingredients" type = "tns:Ingredients"/>
-					<element name = "value" type = "tns:Value"/>
-					<element name = "product_owner" type = "string"/>
-				</sequence>
-				<attribute name = "productName" type = "string" use = "required"/>
-				<attribute name = "filling" use = "optional" default = "no filling">
-					<simpleType>
-						<restriction base = "string">
-							<enumeration value = "no filling"></enumeration>
-							<enumeration value = "cacao"></enumeration>
-							<enumeration value = "hazelnut"></enumeration>
-						</restriction>
-					</simpleType>
-				</attribute>
-			</complexType>
-				<complexType name = "Ingredients">
-					<sequence>
-						<element name = "water" type = "string"/>
-						<element name = "sugar" type = "string"/>
-						<element name = "fructose" type = "string"/>
-						<element name = "vaniline" type = "string"/>
-						<element name = "chocolate_type" type = "string"/>
-					</sequence>
-				</complexType>
-				<complexType name = "Value"> 
-					<sequence>
-						<element name = "protein" type = "string"/>
-						<element name = "fat" type = "string"/>
-						<element name = "carb" type = "string"/>
-					</sequence>
-				</complexType>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:complexType name = "candy">
+				<xs:sequence>
+					<xs:element name = "name" type = "xs:string"/>
+					<xs:element name = "energy" type = "xs:string" />
+					<xs:element name = "type" type = "xs:string" />
+					<xs:element name = "ingredients" type = "Ingredients"/>
+					<xs:element name = "value" type = "Value"/>
+					<xs:element name = "product_owner" type = "xs:string"/>
+				</xs:sequence>
+				<xs:attribute name = "productName" type = "xs:string" use = "required"/>
+				<xs:attribute name = "filling" use = "optional" default = "no filling">
+					<xs:simpleType>
+						<xs:restriction base = "xs:string">
+							<xs:enumeration value = "no filling"></xs:enumeration>
+							<xs:enumeration value = "cacao"></xs:enumeration>
+							<xs:enumeration value = "hazelnut"></xs:enumeration>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+			</xs:complexType>
+				<xs:complexType name = "Ingredients">
+					<xs:sequence>
+						<xs:element name = "water" type = "xs:string"/>
+						<xs:element name = "sugar" type = "xs:string"/>
+						<xs:element name = "fructose" type = "xs:string"/>
+						<xs:element name = "vaniline" type = "xs:string"/>
+						<xs:element name = "chocolate_type" type = "xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+				<xs:complexType name = "Value">
+					<xs:sequence>
+						<xs:element name = "proteins" type = "xs:string"/>
+						<xs:element name = "fats" type = "xs:string"/>
+						<xs:element name = "carbs" type = "xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
 				
-	</schema>
+	</xs:schema>
 	

@@ -1,8 +1,8 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="candiesXSL.xsl"?>
-<candies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-			 xmlns:ns="http://www.example.com/candies"
-			 xsi:schemaLocation="http://www.example.com/candies XSDSchemeForCandies.xsd">
+<candies    xmlns="http://example.com/candies"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xsi:schemaLocation="http://www.example.com/candies/ XSDSchemeForCandies.xsd">
 	<candy productName = "Caramel candy" filling = "no filling">
 		<name> Mechta </name>
 		<energy> 30 ccal </energy>

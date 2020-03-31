@@ -1,2 +1,0 @@
-ERROR - 4 : 81 - cvc-elt.1: Cannot find the declaration of element 'candies'.
-ERROR - 4 : 81 - cvc-elt.1: Cannot find the declaration of element 'candies'.

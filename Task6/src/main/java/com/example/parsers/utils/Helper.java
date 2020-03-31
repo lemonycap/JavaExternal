@@ -1,7 +1,11 @@
 package com.example.parsers.utils;
 
 import candies.Candy;
+import com.example.view.View;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
@@ -35,5 +39,26 @@ public class Helper {
             System.out.println("Carbs: " + c.getValue().getCarb());
             System.out.println("Product owner: " + c.getProductOwner());
         }
+    }
+
+    public static int chooseParser(BufferedReader br) {
+        while (true) {
+            try {
+                String input = br.readLine();
+                return Integer.parseInt(input);
+            } catch (NumberFormatException | IOException e) {
+                View.printMessage(View.WRONG_INPUT);
+            }
+        }
+    }
+
+    public static int measuresCheck(int min, int max) {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int number = chooseParser(br);
+        while (number > max || number < min) {
+            View.printMessage(View.WRONG_INPUT);
+            number = chooseParser(br);
+        }
+        return number;
     }
 }
